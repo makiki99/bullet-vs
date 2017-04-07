@@ -87,21 +87,21 @@ border: 0px
 		for (var i=0; i < 256; i++) {
 			keys[i] = 0;
 		}
-		var pico8_buttons = [0,0];
+		var pico8_buttons = [0,0,0,0,0,0,0,0];
 		function updateKeys(){
-			pico8_buttons[0] = (
-				keys[87] +
-				keys[65]*2 +
-				keys[83]*4 +
-				keys[68]*8 +
+			pico8_buttons[5] = (
+				keys[65] +
+				keys[68]*2 +
+				keys[87]*4 +
+				keys[83]*8 +
 				keys[71]*16 +
 				keys[72]*32
 			);
-			pico8_buttons[1] = (
-				keys[38] +
-				keys[37]*2 +
-				keys[40]*4 +
-				keys[39]*8 +
+			pico8_buttons[6] = (
+				keys[37] +
+				keys[39]*2 +
+				keys[38]*4 +
+				keys[40]*8 +
 				keys[98]*16 +
 				keys[99]*32
 			);
